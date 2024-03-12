@@ -186,6 +186,10 @@ header {
   background-color: #007bff;
 }
 
+.navbar li:has(img) {
+  display: none;
+}
+
 /* Write your CSS below */
 @media (max-width: 760px) {
   .navbar {
@@ -292,5 +296,25 @@ header {
 
   .btn {
     width: 125px;
+  }
+}
+
+/* Iteration 3 | Small Mobile Screens (width < 480px) */
+
+@media (max-width: 480px) {
+  .navbar li:has(a) {
+    display: none;
+  }
+  .navbar li:has(img) {
+    display: flex;
+    padding: 2px 0;
+  }
+
+  .newspaper-name {
+    border-bottom: 0px solid white;
+  }
+
+  main {
+    padding: 10px 0px;
   }
 }
